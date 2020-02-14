@@ -65,7 +65,7 @@ export class AngularMyDatePickerDirective implements OnChanges, OnDestroy, Contr
               private cfr: ComponentFactoryResolver,
               private renderer: Renderer2,
               private cdr: ChangeDetectorRef,
-              private elem: ElementRef,
+              public elem: ElementRef,
               private config: DefaultConfigService) {
     this.opts = this.config.getDefaultConfig();
     this.parseOptions(this.opts);
